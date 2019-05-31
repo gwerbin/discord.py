@@ -122,7 +122,7 @@ class FFmpegPCMAudio(AudioSource):
 
     Parameters
     ------------
-    source: Union[:class:`str`, BinaryIO]
+    source: Union[:class:`str`, :class:`typing.BinaryIO`]
         The input that ffmpeg will take and convert to PCM bytes.
         If ``pipe`` is True then this is a file-like object that is
         passed to the stdin of ffmpeg.
@@ -131,7 +131,7 @@ class FFmpegPCMAudio(AudioSource):
     pipe: :class:`bool`
         If true, denotes that ``source`` parameter will be passed
         to the stdin of ffmpeg. Defaults to ``False``.
-    stderr: Optional[BinaryIO]
+    stderr: Optional[:class:`typing.BinaryIO`]
         A file-like object to pass to the Popen constructor.
         Could also be an instance of ``subprocess.PIPE``.
     options: Optional[:class:`str`]

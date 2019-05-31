@@ -88,7 +88,7 @@ class Attachment:
 
         Parameters
         -----------
-        fp: Union[BinaryIO, :class:`os.PathLike`]
+        fp: Union[:class:`typing.BinaryIO`, :class:`os.PathLike`]
             The file-like object to save this attachment to or the filename
             to use. If a filename is passed then a file is created with that
             filename and used instead.

@@ -172,7 +172,7 @@ class Asset:
 
         Parameters
         ----------
-        fp: Union[BinaryIO, :class:`os.PathLike`]
+        fp: Union[:class:`typing.BinaryIO`, :class:`os.PathLike`]
             Same as in :meth:`Attachment.save`.
         seek_begin: :class:`bool`
             Same as in :meth:`Attachment.save`.
